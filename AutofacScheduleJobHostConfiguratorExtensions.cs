@@ -15,7 +15,7 @@ namespace Topshelf.Quartz.Autofac
         /// <param name="configurator">Topshelf host configurator</param>
         /// <param name="lifetimeScope">Autofac lifetime scope</param>
         /// <returns>Topshelf host configurator</returns>
-        [NotNull, UsedImplicitly]
+        [NotNull]
         public static HostConfigurator UseQuartzAutofac([NotNull] this HostConfigurator configurator, [NotNull] ILifetimeScope lifetimeScope)
         {
             AutofacScheduleJobServiceConfiguratorExtensions.SetupAutofac(lifetimeScope);
