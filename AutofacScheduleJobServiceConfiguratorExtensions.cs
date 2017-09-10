@@ -19,7 +19,8 @@ namespace Topshelf.Quartz.Autofac
         /// <param name="lifetimeScope">Autofac lifetime scope</param>
         /// <typeparam name="T">Type of host</typeparam>
         /// <returns>Topshelf service configurator</returns>
-        public static ServiceConfigurator<T> UseQuartzAutofac<T>(this ServiceConfigurator<T> configurator, [NotNull] ILifetimeScope lifetimeScope) where T : class
+        public static ServiceConfigurator<T> UseQuartzAutofac<T>(this ServiceConfigurator<T> configurator, [NotNull] ILifetimeScope lifetimeScope)
+            where T : class
         {
             SetupAutofac(lifetimeScope);
             return configurator;
