@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Topshelf.Autofac.NetStandard" Version="1.1.7439.37240" />
+    <PackageReference Include="Topshelf.Quartz.NetStandard" Version="1.1.7439.37990" />
+  </ItemGroup>
+</Project>
